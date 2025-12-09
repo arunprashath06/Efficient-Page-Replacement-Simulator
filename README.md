@@ -1,88 +1,90 @@
-🧠 Efficient Page Replacement Algorithm Simulator
+# 🧠 Efficient Page Replacement Algorithm Simulator
 
-A complete C++ simulator for FIFO, LRU, and Optimal page replacement algorithms with a simple console UI, detailed frame visualization, and performance comparison.
+A complete C++ simulator for **FIFO**, **LRU**, and **Optimal** page replacement algorithms with a simple console UI, detailed frame visualization, and performance comparison.
 
-📌 Project Overview
+---
 
-This project demonstrates how an Operating System handles page faults using different page replacement algorithms.
+## 📌 Project Overview
 
+This project demonstrates how an Operating System handles page faults using different **page replacement algorithms**.  
 The simulator accepts:
 
-A reference string (list of page numbers)
-
-A frame count
+- A reference string (list of page numbers)  
+- Number of frames  
 
 Then it performs step-by-step simulation of:
 
-FIFO (First-In First-Out)
-
-LRU (Least Recently Used)
-
-Optimal Page Replacement
+- **FIFO** (First-In First-Out)  
+- **LRU** (Least Recently Used)  
+- **Optimal Page Replacement**
 
 The program displays:
 
-Frame evolution (time × frame table)
+- Frame evolution (time × frame table)  
+- Page fault indicators  
+- Total page faults  
+- Hit ratio  
+- Algorithm comparison  
 
-Page fault indicators
+---
 
-Total page faults
+## 🎯 Features
 
-Hit ratio
+- ✔ Interactive menu-driven console UI  
+- ✔ FIFO, LRU, and Optimal algorithms  
+- ✔ Visual 2D frame evolution table  
+- ✔ Page fault tracking per request  
+- ✔ Hit ratio + performance statistics  
+- ✔ Compare all algorithms side-by-side  
+- ✔ Modular and clean C++ codebase  
+- ✔ Uses only standard C++ headers (no `<bits/stdc++.h>`)
 
-Comparison of all algorithms
+---
 
-🎯 Features
+## 🛠 Technologies Used
 
-✔ Interactive menu-driven console UI
-✔ FIFO, LRU, and Optimal algorithm implementations
-✔ Visual 2D frame evolution table
-✔ Page fault tracking per request
-✔ Hit ratio + performance statistics
-✔ Compare all algorithms side-by-side
-✔ Modular and clean C++ codebase
-✔ Uses only standard C++ headers (no <bits/stdc++.h>)
+### **Programming Language**
+- C++
 
-🛠 Technologies Used
-Programming Language
+### **Standard Libraries**
+- `<iostream>` — input/output  
+- `<vector>` — dynamic arrays  
+- `<queue>` — FIFO operations  
+- `<unordered_set>` — fast lookup  
+- `<unordered_map>` — used for LRU timestamps  
+- `<sstream>` — parses reference string  
+- `<limits>` — input buffer handling  
+- `<iomanip>` — formatting ratios  
+- `<string>` — string processing  
 
-C++
+---
 
-Standard Libraries
+## 📥 Input Format
 
-<iostream> — input/output
-
-<vector> — dynamic arrays
-
-<queue> — FIFO operations
-
-<unordered_set> — fast lookup
-
-<unordered_map> — used for LRU timestamps
-
-<sstream> — parse input reference string
-
-<limits> — input buffer handling
-
-<iomanip> — formatting ratios
-
-<string> — string processing
-
-📥 Input Format
-Reference String — Example
+### **Reference String (Example)**
+```
 7 0 1 2 0 3 0 4 2 3 0 3
+```
 
-Number of Frames
+### **Number of Frames**
+```
 3
+```
 
-📋 Menu Options
-1. FIFO
-2. LRU
-3. Optimal
-4. Compare All
-5. Exit
+---
 
-📊 Sample Output
+## 📋 Menu Options
+1. FIFO  
+2. LRU  
+3. Optimal  
+4. Compare All  
+5. Exit  
+
+---
+
+## 📊 Sample Output
+
+```
 Reference string:
 7 0 1 2 0 3 ...
 
@@ -96,15 +98,27 @@ Fault        F   F   F
 Total Requests: 12
 Page Faults: 9
 Hit Ratio: 25.00%
+```
 
-🚀 How to Compile & Run
-Compile
+---
+
+## 🚀 How to Compile & Run
+
+### **Compile**
+```bash
 g++ src/pagereplacement.cpp -o simulator
+```
 
-Run
+### **Run**
+```bash
 ./simulator
+```
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
+
+```
 Efficient-Page-Replacement-Simulator/
 │
 ├── src/
@@ -121,23 +135,24 @@ Efficient-Page-Replacement-Simulator/
 │
 ├── README.md
 └── LICENSE
+```
 
-🔮 Future Enhancements
+---
 
-Add Second Chance / Clock algorithm
+## 🔮 Future Enhancements
 
-Build a GUI using Qt or web technologies
+- Add Second Chance / Clock algorithm  
+- Build a GUI (Qt or web front-end)  
+- Auto-generate random reference strings  
+- Export results to CSV/PDF  
+- Add animations or visual charts  
 
-Auto-generate random reference strings
+---
 
-Export simulation results to CSV/PDF
+## 📝 License
+This project is provided under the **MIT License** for educational and academic use.
 
-Add animations or visualization charts
+---
 
-📝 License
-
-This project is provided for educational and academic use under the MIT License.
-
-🤝 Contributions
-
-Contributions, pull requests, and forks are welcome!
+## 🤝 Contributions
+Contributions, forks, and pull requests are welcome!
