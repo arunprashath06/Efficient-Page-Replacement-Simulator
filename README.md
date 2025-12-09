@@ -148,11 +148,3 @@ Efficient-Page-Replacement-Simulator/
 - Add animations or visual charts  
 
 ---
-
-## 📝 License
-This project is provided under the **MIT License** for educational and academic use.
-
----
-
-## 🤝 Contributions
-Contributions, forks, and pull requests are welcome!
